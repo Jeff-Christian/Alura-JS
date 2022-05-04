@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.nav-bar{
+    height: 50px;
+    background-color: #BF0F0F;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.nav-bar h1{
+    font-size: 35px;
+    padding: 8px;
+    color: #fff;
+}
+
+#pesquisar-pokemon{
+    display: block;
+    width: 400px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.container {
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.container h2{
+    font-size: 3em;
+    display: block;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 0.5em;
+}
+
+td, th {
+    padding: 1em;
+    margin: 0;
+    border: 1px solid black;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+th {
+    font-weight: bold;
+    background-color: #a4a4a4;
+}
+
+/* Container de adicionar pokemons */
+
+.main-container{
+    margin: 5em auto;
+}
+
+.title-form{
+    text-align: center;
+    padding: 20px auto;
+    background-color: black;
+    color: #fff;
+}
+
+.adicionar-novo-pokemon{
+    display: block;
+    margin: 20px 20px;
+}
+
+.adicionar-novo-pokemon label{
+    font-size: 20px;
+}
+
+
+.main-container input{
+    display: block;
+    width: 400px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#btn-adicionar{
+    display: block;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 5px;
+    width: 200px;
+    background-color: #BF0F0F;
+    color: #fff;
+    box-shadow: 0px 0px 0px 2px black;
+    border-radius: 3px;
+    cursor:pointer;
+}
+
+.fade-out{
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.esconder{
+    display: none;
+}

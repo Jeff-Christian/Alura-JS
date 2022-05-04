@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./img/favicon-32x32.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Complete a sua pokédex</title>
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            <h1>A sua Pokédex</h1>
+        </div>
+    </header>
+    <main>
+        <section class="container">
+            <h2>Meus pokémons</h2>
+            <label for="pesquisar-pokemon">Pesquisar Pokémons: </label>
+            <input type="text" name="pesquisar" id="pesquisar-pokemon" placeholder="Digite o nome do pokémon">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Número</th>
+                        <th>Habilidade</th>
+                        <th>Tipo</th>
+                        <th>Apelido</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela-pokemons">
+                    <tr class="pokemon" >
+                        <td class="info-nome">Bulbasaur</td>
+                        <td class="info-numero">001</td>
+                        <td class="info-habilidade">Overgrow</td>
+                        <td class="info-tipo">Grama</td>
+                        <td class="info-apelido">Bulba</td>
+                    </tr>
+
+                    <tr class="pokemon" >
+                        <td class="info-nome">Inkay</td>
+                        <td class="info-numero">686</td>
+                        <td class="info-habilidade">Contrary</td>
+                        <td class="info-tipo">Noturno/Psiquico</td>
+                        <td class="info-apelido">Gelatina</td>
+                    </tr>
+
+                    <tr class="pokemon" >
+                        <td class="info-nome">Buzzwole</td>
+                        <td class="info-numero">794</td>
+                        <td class="info-habilidade">Beast Boost</td>
+                        <td class="info-tipo">Inseto/lutador</td>
+                        <td class="info-apelido">Zica</td>
+                    </tr>
+
+                    <tr class="pokemon" >
+                        <td class="info-nome">Dhelmise</td>
+                        <td class="info-numero">781</td>
+                        <td class="info-habilidade">Steelworker</td>
+                        <td class="info-tipo">Fantasma/Grama</td>
+                        <td class="info-apelido">Titanic</td>
+                    </tr>
+    
+                    <tr class="pokemon" >
+                        <td class="info-nome">Yanmega</td>
+                        <td class="info-numero">469</td>
+                        <td class="info-habilidade">Speed Boost</td>
+                        <td class="info-tipo">Inseto/Voador</td>
+                        <td class="info-apelido">Rike</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="main-container">
+            <h2 class="title-form">Adicionar Novo Pokémon</h2>
+            <div class="adicionar-novo-pokemon">
+                <form id="pokemon-form">
+                    <label for="pokemon">Pokémon: </label>
+                    <input id="pokemon" type="text" name="nome" placeholder="digite o nome do Pokémon">
+                    <label for="numero-dex">Número na dex: </label>
+                    <input type="number" id="numero-dex" name="numero" placeholder="digite o número dele na Dex">
+                    <label for="abilities">Habilidade: </label>
+                    <input type="text" id="abilities" name="habilidade" placeholder="digite a habilidade">
+                    <label for="tipo">Tipo: </label>
+                    <input type="text" id="tipo" name="tipo" placeholder="digite a tipagem">
+                    <label for="apelido">Apelido: </label>
+                    <input type="text" id="apelido" name="apelido" placeholder="digite o apelido que você deseja dar">
+                    <button id="btn-adicionar">Adicionar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="./js/add-new-pokemon.js"></script>
+    <script src="./js/remove.js"></script>
+    <script src="./js/filtro.js"></script>
+</body>
+</html>
